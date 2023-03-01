@@ -11,5 +11,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // 23.03.02 IntroActivity Test #aeeazip
+        Intent intent = new Intent(this, IntroActivity.class);
+        startActivity(intent);
     }
 }
