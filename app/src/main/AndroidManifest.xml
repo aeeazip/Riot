@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RiotGames"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -26,6 +27,7 @@
                 android:value="" />
         </activity>
         <activity android:name=".IntroActivity" android:exported="true" />
+        <activity android:name=".AddAccountActivity" android:exported="true" />
     </application>
 
 </manifest>
