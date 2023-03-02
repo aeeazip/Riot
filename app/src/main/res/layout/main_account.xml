@@ -3,15 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingLeft="21dp"
+    android:paddingRight="21dp">
 
 
     <Button
         android:id="@+id/accountImageBtn"
         android:layout_width="255dp"
         android:layout_height="255dp"
-        android:text="Hide on bush"
         android:background="@drawable/shape_for_circle_button"
+        android:text="Hide on bush"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,14 +48,15 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="14dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/left_scroll"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/accountImageBtn"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        android:src="@drawable/left_scroll"
-        android:contentDescription="TODO" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <ImageView
         android:id="@+id/rightScroll"
@@ -61,50 +64,68 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="14dp"
+        android:src="@drawable/right_scroll"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/accountImageBtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        android:src="@drawable/right_scroll" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <ImageView
         android:id="@+id/upperScroll"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="200dp"
         android:layout_marginBottom="32dp"
+        android:src="@drawable/upper_scroll"
         app:layout_constraintBottom_toTopOf="@+id/accountImageBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/upper_scroll" />
+        app:layout_constraintVertical_bias="0.571" />
 
     <ImageView
         android:id="@+id/lowwerScroll"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="158dp"
+        android:layout_marginBottom="200dp"
         android:onClick="onClick"
+        android:src="@drawable/lowwer_scroll"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/accountImageBtn"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:src="@drawable/lowwer_scroll" />
+        app:layout_constraintVertical_bias="0.309"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/see_more"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/menu"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/infoInGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/btn_mint"
+        android:paddingLeft="21sp"
+        android:paddingRight="21sp"
+        android:text="인게임 정보 확인"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lowwerScroll" />
 </androidx.constraintlayout.widget.ConstraintLayout>
