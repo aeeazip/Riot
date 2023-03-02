@@ -14,7 +14,7 @@ public class AddAccountActivity extends AppCompatActivity {
         setContentView(R.layout.add_account);
 
         try{
-            Thread.sleep(3);
+            Thread.sleep(10);
         } catch(Exception e){
             e.printStackTrace();
         }

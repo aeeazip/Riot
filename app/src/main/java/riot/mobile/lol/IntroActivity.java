@@ -12,7 +12,7 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
         try{
-            Thread.sleep(5);
+            Thread.sleep(10);
         } catch(Exception e){
             e.printStackTrace();
         }
