@@ -2,6 +2,8 @@ package riot.mobile.lol;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -26,10 +28,12 @@ public class MainAccountActivity extends AppCompatActivity {
 
         // CustomDialog 불러오기
         removeAccountDialog = new Dialog(this);                          // Dialog 초기화
+        removeAccountDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));        // 추가 안하면 모서리 둥글게 적용 X
         removeAccountDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);      // 타이틀 제거
         removeAccountDialog.setContentView(R.layout.remove_account_dialog);
 
         removeCompleteDialog = new Dialog(this);                         // Dialog 초기화
+        removeCompleteDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));      // 추가 안하면 모서리 둥글게 적용 X
         removeCompleteDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);     // 타이틀 제거
         removeCompleteDialog.setContentView(R.layout.remove_account_complete);
     }
